@@ -5,7 +5,7 @@ const ResetStyles = createGlobalStyle`
  body {
    padding: 0;
    margin: 0;
-   font-family: 'Playfair Display', serif;
+   font-family: 'Open Sans', sans-serif;
    background-color:  #f6f6f0;
  }
 
