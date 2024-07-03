@@ -18,6 +18,12 @@ export default function StyledCartItemsTableMobile({
     return (
         <Card className={className}>
             <div className="cartItem__container">
+                <div className="cardItem_headerDesktop">
+                    <p>Produto</p>
+                    <p>Qtd</p>
+                    <p>Subtotal</p>
+                    <p></p>
+                </div>
                 {products.map((product) => (
                     <div
                         className="cartItem__productContainer"
@@ -37,6 +43,7 @@ export default function StyledCartItemsTableMobile({
                                     {formatPriceToBRL(product.price)}
                                 </span>
                                 <Button
+                                    className="cartItem__removeButton"
                                     onClick={() =>
                                         removeProductFromCart(product.id)
                                     }
@@ -70,6 +77,14 @@ export default function StyledCartItemsTableMobile({
                                         )}
                                     </span>
                                 </div>
+                                <Button
+                                    className="cartItem__removeButtonDesktop"
+                                    onClick={() =>
+                                        removeProductFromCart(product.id)
+                                    }
+                                >
+                                    <img src={TrashIcon} alt="Trash icon" />
+                                </Button>
                             </div>
                         </div>
                     </div>

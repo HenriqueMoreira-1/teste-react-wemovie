@@ -14,6 +14,25 @@ export const CartItemsTableMobile = styled(StyledCartItemsTableMobile)`
         margin-bottom: 21px;
     }
 
+    .cardItem_headerDesktop {
+        display: none;
+        padding-bottom: 21px;
+
+        p {
+            color: ${({ theme }) => theme.color.gray[300]};
+            font-size: ${({ theme }) => theme.size.sm};
+            font-weight: ${({ theme }) => theme.fontWeight.bold};
+            text-transform: uppercase;
+        }
+
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 21px;
+        }
+    }
+
     .cartItem__productContainer {
         display: flex;
         gap: 16px;
@@ -32,6 +51,7 @@ export const CartItemsTableMobile = styled(StyledCartItemsTableMobile)`
 
         .cartItem__info {
             display: flex;
+            justify-content: space-between;
             flex-direction: column;
             flex-grow: 1;
             gap: 16px;
@@ -69,6 +89,41 @@ export const CartItemsTableMobile = styled(StyledCartItemsTableMobile)`
                         font-size: ${({ theme }) => theme.size.xs};
                         text-transform: uppercase;
                     }
+                    
+                    @media (min-width: 768px) { 
+                        .cartItem__subtotalText {
+                            display: none;
+                        }
+                    }
+                }
+
+                .cartItem__removeButtonDesktop {
+                    display: none;
+                }
+
+                @media (min-width: 768px) {
+                    width: 70%;
+                    justify-content: space-between;
+
+                    .cartItem__removeButtonDesktop {
+                        display: flex;
+                    }
+                }
+            }
+
+            @media (min-width: 768px) {
+                flex-direction: row;
+                justify-content: start;
+
+                .cartItem__infoTitle {
+                    flex-direction: column;
+                    width: 26%;
+                    align-items: flex-start;
+                    justify-content: center;
+                }
+
+                .cartItem__removeButton {
+                    display: none;
                 }
             }
         }
@@ -103,6 +158,21 @@ export const CartItemsTableMobile = styled(StyledCartItemsTableMobile)`
             width: 100%;
 
             font-size: ${({ theme }) => theme.size.sm};
+        }
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+
+            .cartItem__totalContainer {
+                order: 2;
+            }
+
+            .cardItem__finishOrderButton {
+                width: auto;
+                padding-left: 60px;
+                padding-right: 60px;
+            }
         }
     }
 `;
