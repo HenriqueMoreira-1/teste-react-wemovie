@@ -1,5 +1,5 @@
-import { ProductList } from "../../components/Product/ProductList.styled";
 import { ProductsProvider } from "../../services/api/products";
+import { ProductList } from "../../views/Product/ProductList.styled";
 
 export default function Home() {
     const { data: products } = ProductsProvider.List();

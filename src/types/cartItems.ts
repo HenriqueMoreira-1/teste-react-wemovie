@@ -1,4 +1,4 @@
-import { SelectedProduct } from "../providers/CartProductsProvider";
+import { SelectedProduct } from "./cartProductsProvider";
 
 export type CartItemsTableProps = {
     className?: string;
