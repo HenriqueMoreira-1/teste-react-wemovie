@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 
 
 import { Paths } from "../../routes/paths";
-import { CartItemsTableMobile } from "../../views/Cart/CartItems/CartItemsTableMobile.styled";
+import { CartItems } from "../../views/Cart/CartItems/CartItems.styled";
 import { EmptyCartCard } from "../../views/Cart/CartItems/EmptyCartCard.styled";
 import { useCartProducts } from "../../providers/CartProductsProvider";
 
@@ -29,7 +29,7 @@ export default function Cart() {
 
     if (selectedProducts.length) {
         return (
-            <CartItemsTableMobile
+            <CartItems
                 products={selectedProducts}
                 totalOrderPrice={totalOrderPrice}
                 increaseProductQuantity={increaseProductQuantity}

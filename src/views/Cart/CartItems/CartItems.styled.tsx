@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import StyledCartItemsTableMobile from "./CartItemsTableMobile";
+import StyledCartItems from "./CartItems";
 
-export const CartItemsTableMobile = styled(StyledCartItemsTableMobile)`
+export const CartItems = styled(StyledCartItems)`
     display: flex;
     flex-direction: column;
     justify-content: space-between;

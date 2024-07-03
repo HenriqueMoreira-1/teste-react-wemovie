@@ -5,7 +5,7 @@ import { Card } from "../../../components/Card/Card.styled";
 import { Button, ButtonPrimary } from "../../../components/Button/Button.styled";
 import { InputStepper } from "../../../components/InputStepper/InputStepper.styled";
 
-export default function StyledCartItemsTableMobile({
+export default function StyledCartItems({
     className,
     products,
     totalOrderPrice,
