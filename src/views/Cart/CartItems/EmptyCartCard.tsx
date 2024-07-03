@@ -1,8 +1,8 @@
-import { ButtonPrimary } from "../../ui/Button/Button.styled";
 import EmptyCart from "../../../assets/empty-cart.svg";
-import { Card } from "../../ui/Card/Card.styled";
 import { useNavigate } from "react-router-dom";
 import { Paths } from "../../../routes/paths";
+import { Card } from "../../../components/Card/Card.styled";
+import { ButtonPrimary } from "../../../components/Button/Button.styled";
 
 type EmptyCartCard = { className?: string };
 

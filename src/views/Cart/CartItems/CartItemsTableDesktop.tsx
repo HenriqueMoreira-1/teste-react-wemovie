@@ -1,9 +1,9 @@
 import { formatPriceToBRL } from "../../../utils/formatPriceToBRL";
 import TrashIcon from "../../../assets/trash-icon.svg";
-import { Card } from "../../ui/Card/Card.styled";
-import { Button, ButtonPrimary } from "../../ui/Button/Button.styled";
 import { CartItemsTableProps } from "../../../types/cartItems";
-import { InputStepper } from "../../ui/InputStepper/InputStepper.styled";
+import { Card } from "../../../components/Card/Card.styled";
+import { InputStepper } from "../../../components/InputStepper/InputStepper.styled";
+import { Button, ButtonPrimary } from "../../../components/Button/Button.styled";
 
 export default function StyledCartItemsTableDesktop({
     className,
