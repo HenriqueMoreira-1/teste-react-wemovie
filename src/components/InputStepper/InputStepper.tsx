@@ -1,6 +1,6 @@
 import { Button } from "../Button/Button.styled";
-import MinusIcon from "../../../assets/minus-icon.svg";
-import PlusIcon from "../../../assets/plus-icon.svg";
+import MinusIcon from "../../assets/minus-icon.svg";
+import PlusIcon from "../../assets/plus-icon.svg";
 
 type InputStepperProps = {
     decrease: () => void;
