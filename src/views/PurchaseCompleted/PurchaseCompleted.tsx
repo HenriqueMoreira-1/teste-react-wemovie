@@ -1,8 +1,8 @@
-import { Card } from "../ui/Card/Card.styled";
 import OrderCompleted from "../../assets/order-completed.svg";
-import { ButtonPrimary } from "../ui/Button/Button.styled";
 import { useNavigate } from "react-router-dom";
 import { Paths } from "../../routes/paths";
+import { Card } from "../../components/Card/Card.styled";
+import { ButtonPrimary } from "../../components/Button/Button.styled";
 
 type PurchaseCompleted = { className?: string };
 
