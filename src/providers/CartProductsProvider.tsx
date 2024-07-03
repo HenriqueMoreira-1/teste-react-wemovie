@@ -1,21 +1,21 @@
 import { createContext, useContext, useState } from "react";
 import {
-    SelectedProduct,
-    SelectedProductsContext,
-    SelectedProductsProviderProps,
+    ISelectedProduct,
+    ISelectedProductsContext,
+    ISelectedProductsProviderProps,
 } from "../types/cartProductsProvider";
 
 export const CartProductsContext =
-    createContext<SelectedProductsContext | null>(null);
+    createContext<ISelectedProductsContext | null>(null);
 
 export default function SelectedProductsProvider({
     children,
-}: SelectedProductsProviderProps) {
-    const [selectedProducts, setSelectedProducts] = useState<SelectedProduct[]>(
+}: ISelectedProductsProviderProps) {
+    const [selectedProducts, setSelectedProducts] = useState<ISelectedProduct[]>(
         []
     );
 
-    const addProductToCart = (product: SelectedProduct) => {
+    const addProductToCart = (product: ISelectedProduct) => {
         const productAlreadySelected = selectedProducts.find(
             (selectedProduct) => selectedProduct.id === product.id
         );
@@ -42,7 +42,7 @@ export default function SelectedProductsProvider({
         }
     };
 
-    const increaseProductQuantity = (product: SelectedProduct) => {
+    const increaseProductQuantity = (product: ISelectedProduct) => {
         const productAlreadySelectedIndex = selectedProducts.findIndex(
             (selectedProduct) => selectedProduct.id === product.id
         );
@@ -56,7 +56,7 @@ export default function SelectedProductsProvider({
         }
     };
 
-    const decreaseProductQuantity = (product: SelectedProduct) => {
+    const decreaseProductQuantity = (product: ISelectedProduct) => {
         const productAlreadySelectedIndex = selectedProducts.findIndex(
             (selectedProduct) => selectedProduct.id === product.id
         );
@@ -72,7 +72,7 @@ export default function SelectedProductsProvider({
     };
 
     const changeProductQuantity = (
-        product: SelectedProduct,
+        product: ISelectedProduct,
         quantity: number
     ) => {
         const productAlreadySelectedIndex = selectedProducts.findIndex(

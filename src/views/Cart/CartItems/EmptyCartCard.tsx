@@ -3,10 +3,9 @@ import { useNavigate } from "react-router-dom";
 import { Paths } from "../../../routes/paths";
 import { Card } from "../../../components/Card/Card.styled";
 import { ButtonPrimary } from "../../../components/Button/Button.styled";
+import { IEmptyCartCard } from "./IEmptyCard";
 
-type EmptyCartCard = { className?: string };
-
-export default function StyledEmptyCartCard({ className }: EmptyCartCard) {
+export default function StyledEmptyCartCard({ className }: IEmptyCartCard) {
     const navigate = useNavigate();
 
     return (

@@ -1,8 +1,8 @@
-import { Product } from "./product";
+import { IProduct } from "./product";
 
-export type ProductCardProps = { product: Product; className?: string };
+export type IProductCardProps = { product: IProduct; className?: string };
 
-export type ProductListProps = {
+export type IProductListProps = {
     className?: string;
-    products: Product[];
+    products: IProduct[];
 };

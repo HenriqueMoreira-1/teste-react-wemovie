@@ -1,12 +1,12 @@
-import { SelectedProduct } from "./cartProductsProvider";
+import { ISelectedProduct } from "./cartProductsProvider";
 
-export type CartItemsTableProps = {
+export type ICartItemsTableProps = {
     className?: string;
-    products: SelectedProduct[];
+    products: ISelectedProduct[];
     totalOrderPrice: number;
-    increaseProductQuantity: (product: SelectedProduct) => void;
-    decreaseProductQuantity: (product: SelectedProduct) => void;
-    changeProductQuantity: (product: SelectedProduct, quantity: number) => void;
+    increaseProductQuantity: (product: ISelectedProduct) => void;
+    decreaseProductQuantity: (product: ISelectedProduct) => void;
+    changeProductQuantity: (product: ISelectedProduct, quantity: number) => void;
     removeProductFromCart: (productId: number) => void;
     handleCompleteOrder: () => void;
 };

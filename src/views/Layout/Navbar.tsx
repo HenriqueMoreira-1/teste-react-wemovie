@@ -2,12 +2,9 @@ import { Link } from "react-router-dom";
 import { MyCart } from "../Cart/MyCart/MyCart.styled";
 import { StyledNavbarContainer } from "./NavbarContainer.styled";
 import { Paths } from "../../routes/paths";
+import { INavbarProps } from "./INavbar";
 
-type NavbarProps = {
-    className?: string;
-};
-
-export default function StyledNavbar({ className }: NavbarProps) {
+export default function StyledNavbar({ className }: INavbarProps) {
     return (
         <div className={className}>
             <StyledNavbarContainer>

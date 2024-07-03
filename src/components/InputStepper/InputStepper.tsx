@@ -1,14 +1,7 @@
 import { Button } from "../Button/Button.styled";
 import MinusIcon from "../../assets/minus-icon.svg";
 import PlusIcon from "../../assets/plus-icon.svg";
-
-type InputStepperProps = {
-    decrease: () => void;
-    increase: () => void;
-    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-    value: number;
-    className?: string;
-};
+import { IInputStepperProps } from "./IInputStepper";
 
 export default function StyledInputStepper({
     decrease,
@@ -16,7 +9,7 @@ export default function StyledInputStepper({
     onChange,
     value,
     className,
-}: InputStepperProps) {
+}: IInputStepperProps) {
     return (
         <div className={className}>
             <Button onClick={decrease}>

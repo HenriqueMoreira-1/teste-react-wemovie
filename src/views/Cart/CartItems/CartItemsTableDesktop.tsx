@@ -1,6 +1,6 @@
 import { formatPriceToBRL } from "../../../utils/formatPriceToBRL";
 import TrashIcon from "../../../assets/trash-icon.svg";
-import { CartItemsTableProps } from "../../../types/cartItems";
+import { ICartItemsTableProps } from "../../../types/cartItems";
 import { Card } from "../../../components/Card/Card.styled";
 import { InputStepper } from "../../../components/InputStepper/InputStepper.styled";
 import { Button, ButtonPrimary } from "../../../components/Button/Button.styled";
@@ -14,7 +14,7 @@ export default function StyledCartItemsTableDesktop({
     changeProductQuantity,
     removeProductFromCart,
     handleCompleteOrder,
-}: CartItemsTableProps) {
+}: ICartItemsTableProps) {
     return (
         <Card className={className}>
             <table className="cartItem__table">

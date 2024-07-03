@@ -2,12 +2,9 @@ import { Link } from "react-router-dom";
 import ShoppingBag from "../../../assets/shopping-bag.svg";
 import { Paths } from "../../../routes/paths";
 import { useCartProducts } from "../../../providers/CartProductsProvider";
+import { IMyCartProps } from "./IMyCart";
 
-type MyCartProps = {
-    className?: string;
-};
-
-export default function StyledMyCart({ className }: MyCartProps) {
+export default function StyledMyCart({ className }: IMyCartProps) {
     const { totalNumberOfItems } = useCartProducts();
 
     return (

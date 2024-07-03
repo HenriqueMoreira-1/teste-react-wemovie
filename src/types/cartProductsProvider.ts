@@ -1,18 +1,18 @@
-import { Product } from "./product";
+import { IProduct } from "./product";
 
-export type SelectedProductsProviderProps = {
+export type ISelectedProductsProviderProps = {
     children: React.ReactNode;
 };
 
-export type SelectedProduct = Product & { quantity: number };
+export type ISelectedProduct = IProduct & { quantity: number };
 
-export type SelectedProductsContext = {
-    selectedProducts: SelectedProduct[];
-    addProductToCart: (product: SelectedProduct) => void;
+export type ISelectedProductsContext = {
+    selectedProducts: ISelectedProduct[];
+    addProductToCart: (product: ISelectedProduct) => void;
     removeProductFromCart: (productId: number) => void;
-    increaseProductQuantity: (product: SelectedProduct) => void;
-    decreaseProductQuantity: (product: SelectedProduct) => void;
-    changeProductQuantity: (product: SelectedProduct, quantity: number) => void;
+    increaseProductQuantity: (product: ISelectedProduct) => void;
+    decreaseProductQuantity: (product: ISelectedProduct) => void;
+    changeProductQuantity: (product: ISelectedProduct, quantity: number) => void;
     clearCart: () => void;
     totalOrderPrice: number;
     totalNumberOfItems: number;

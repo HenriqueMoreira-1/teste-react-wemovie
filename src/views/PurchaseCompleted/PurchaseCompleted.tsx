@@ -3,12 +3,11 @@ import { useNavigate } from "react-router-dom";
 import { Paths } from "../../routes/paths";
 import { Card } from "../../components/Card/Card.styled";
 import { ButtonPrimary } from "../../components/Button/Button.styled";
-
-type PurchaseCompleted = { className?: string };
+import { IPurchaseCompleted } from "./IPurchaseCompleted";
 
 export default function StyledPurchaseCompleted({
     className,
-}: PurchaseCompleted) {
+}: IPurchaseCompleted) {
     const navigate = useNavigate();
 
     return (

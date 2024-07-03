@@ -1,5 +1,5 @@
 import { formatPriceToBRL } from "../../../utils/formatPriceToBRL";
-import { CartItemsTableProps } from "../../../types/cartItems";
+import { ICartItemsTableProps } from "../../../types/cartItems";
 import TrashIcon from "../../../assets/trash-icon.svg";
 import { Card } from "../../../components/Card/Card.styled";
 import { Button, ButtonPrimary } from "../../../components/Button/Button.styled";
@@ -14,7 +14,7 @@ export default function StyledCartItemsTableMobile({
     changeProductQuantity,
     removeProductFromCart,
     handleCompleteOrder,
-}: CartItemsTableProps) {
+}: ICartItemsTableProps) {
     return (
         <Card className={className}>
             <div className="cartItem__container">
