@@ -82,7 +82,7 @@ export const CartItemsTableMobile = styled(StyledCartItemsTableMobile)`
         .cartItem__totalContainer {
             display: flex;
             align-items: center;
-            justify-content: flex-end;
+            justify-content: space-between;
             gap: 16px;
 
             .cartItem__total {
