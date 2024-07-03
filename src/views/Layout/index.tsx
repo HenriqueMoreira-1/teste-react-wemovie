@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import { Navbar } from "./Navbar.styled";
 import { Outlet } from "react-router-dom";
 import { BodyContainer } from "./BodyContainer.styled";
-import { LoadingSpinner } from "../LoadingSpinner/LoadingSpinner.styled";
+import { LoadingSpinner } from "../../components/LoadingSpinner/LoadingSpinner.styled";
 
 export default function Layout() {
     return (
