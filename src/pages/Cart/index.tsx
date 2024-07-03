@@ -1,12 +1,12 @@
 import { useNavigate } from "react-router-dom";
 
 import useScreenSize from "../../hooks/useScreenSize";
-import { useCartProducts } from "../../hooks/useCartProducts";
 
 import { Paths } from "../../routes/paths";
 import { CartItemsTableDesktop } from "../../views/Cart/CartItems/CartItemsTableDesktop.styled";
 import { CartItemsTableMobile } from "../../views/Cart/CartItems/CartItemsTableMobile.styled";
 import { EmptyCartCard } from "../../views/Cart/CartItems/EmptyCartCard.styled";
+import { useCartProducts } from "../../providers/CartProductsProvider";
 
 export default function Cart() {
     const {

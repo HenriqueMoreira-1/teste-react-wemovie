@@ -1,9 +1,9 @@
 import { formatPriceToBRL } from "../../utils/formatPriceToBRL";
 import { ProductCardProps } from "../../types/productList";
 import ShoppingCart from "../../assets/shopping-cart.svg";
-import { useCartProducts } from "../../hooks/useCartProducts";
 import { Card } from "../../components/Card/Card.styled";
 import { ButtonPrimary, ButtonSuccess } from "../../components/Button/Button.styled";
+import { useCartProducts } from "../../providers/CartProductsProvider";
 
 export default function StyledProductCard({
     product,

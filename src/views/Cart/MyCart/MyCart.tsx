@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import ShoppingBag from "../../../assets/shopping-bag.svg";
 import { Paths } from "../../../routes/paths";
-import { useCartProducts } from "../../../hooks/useCartProducts";
+import { useCartProducts } from "../../../providers/CartProductsProvider";
 
 type MyCartProps = {
     className?: string;
