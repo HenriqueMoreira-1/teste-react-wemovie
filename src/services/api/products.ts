@@ -6,7 +6,7 @@ import {
 import { IProduct } from "../../types/product";
 
 const listProducts = async (): Promise<IProduct[]> => {
-    const resp = await fetch("http://localhost:3000/products").then((resp) =>
+    const resp = await fetch(`${process.env.APPLICATION_URL}/products`).then((resp) =>
         resp.json()
     );
 
