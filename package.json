@@ -5,15 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "server": "yarn json-server ./src/server/db.json",
     "build": "tsc -b && vite build",
-    "vercel-build": "tsc -b && vite build && yarn json-server ./src/server/db.json",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.17.19",
-    "json-server": "^1.0.0-alpha.21",
+    "json-server": "^1.0.0-beta.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.3",

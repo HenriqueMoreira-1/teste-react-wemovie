@@ -6,7 +6,7 @@ import {
 import { IProduct } from "../../types/product";
 
 const listProducts = async (): Promise<IProduct[]> => {
-    const resp = await fetch("/products").then((resp) =>
+    const resp = await fetch("https://teste-backend-anaw.onrender.com/products").then((resp) =>
         resp.json()
     );
 
