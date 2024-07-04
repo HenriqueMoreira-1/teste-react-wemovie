@@ -102,7 +102,7 @@ export const CartItems = styled(StyledCartItems)`
                 }
 
                 @media (min-width: 768px) {
-                    width: 70%;
+                    width: 90%;
                     justify-content: space-between;
 
                     .cartItem__removeButtonDesktop {
