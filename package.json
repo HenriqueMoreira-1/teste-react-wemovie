@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "server": "yarn json-server ./src/server/db.json",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && yarn json-server ./src/server/db.json",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
