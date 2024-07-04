@@ -3,7 +3,7 @@ import StyledNavbar from "./Navbar";
 
 export const Navbar = styled(StyledNavbar)`
     background-color: ${({ theme }) => theme.color.gray[900]};
-    padding: 18px 0;
+    padding: 18px 8px;
 
     .navbar__logo {
         font-size: ${({ theme }) => theme.size.lg};
@@ -12,5 +12,9 @@ export const Navbar = styled(StyledNavbar)`
     a {
         text-decoration: none;
         color: ${({ theme }) => theme.color.white};
+    }
+
+    @media (min-width: 768px) {
+        padding: 18px 0px;
     }
 `;

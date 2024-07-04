@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Paths } from "../../routes/paths";
 import { CartItems } from "../../views/Cart/CartItems/CartItems.styled";
 import { EmptyCartCard } from "../../views/Cart/CartItems/EmptyCartCard.styled";
-import { useCartProducts } from "../../providers/CartProductsProvider";
+import { useCartProducts } from "../../hooks/useCartProducts";
 
 export default function Cart() {
     const {

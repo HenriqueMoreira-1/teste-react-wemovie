@@ -7,7 +7,6 @@ export const CartItems = styled(StyledCartItems)`
     justify-content: space-between;
     padding: ${({ theme }) => theme.size.md};
     width: 100%;
-    height: 90vh;
 
     .cartItem__container {
         border-bottom: solid 1px ${({ theme }) => theme.color.gray[300]};
@@ -89,7 +88,7 @@ export const CartItems = styled(StyledCartItems)`
                         font-size: ${({ theme }) => theme.size.xs};
                         text-transform: uppercase;
                     }
-                    
+
                     @media (min-width: 768px) { 
                         .cartItem__subtotalText {
                             display: none;

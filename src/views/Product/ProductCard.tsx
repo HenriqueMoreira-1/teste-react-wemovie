@@ -3,7 +3,7 @@ import { IProductCardProps } from "../../types/productList";
 import ShoppingCart from "../../assets/shopping-cart.svg";
 import { Card } from "../../components/Card/Card.styled";
 import { ButtonPrimary, ButtonSuccess } from "../../components/Button/Button.styled";
-import { useCartProducts } from "../../providers/CartProductsProvider";
+import { useCartProducts } from "../../hooks/useCartProducts";
 
 export default function StyledProductCard({
     product,

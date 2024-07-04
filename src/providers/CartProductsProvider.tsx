@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useState } from "react";
 import {
     ISelectedProduct,
     ISelectedProductsContext,
@@ -122,16 +122,3 @@ export default function SelectedProductsProvider({
         </CartProductsContext.Provider>
     );
 }
-
-// eslint-disable-next-line react-refresh/only-export-components
-export const useCartProducts = () => {
-    const context = useContext(CartProductsContext);
-
-    if (!context) {
-        throw new Error(
-            "useCartProducts must be used within a CartProductsContext"
-        );
-    }
-
-    return context;
-};
